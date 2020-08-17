@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f5caa34e-7783-4d2d-aefc-2b2b3724cb14" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ngApp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ngApp/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ngApp/src/app/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ngApp/src/app/register/register.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +35,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="ts.external.directory.path" value="E:\MEAN PROJECTS\angularauth\ngApp\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
@@ -50,7 +53,7 @@
       <updated>1597594832237</updated>
       <workItem from="1597594838035" duration="3702000" />
       <workItem from="1597629034923" duration="8738000" />
-      <workItem from="1597657425898" duration="2632000" />
+      <workItem from="1597657425898" duration="3604000" />
     </task>
     <servers />
   </component>
@@ -62,5 +65,9 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="447" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1597595944313" />
+    <state x="184" y="29" key="SettingsEditor" timestamp="1597661059781">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="184" y="29" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1597661059781" />
   </component>
 </project>
