@@ -4,6 +4,7 @@
     <list default="true" id="f5caa34e-7783-4d2d-aefc-2b2b3724cb14" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ngApp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ngApp/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ngApp/src/app/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ngApp/src/app/auth.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ngApp/src/app/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ngApp/src/app/register/register.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ngApp/src/app/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ngApp/src/app/register/register.component.ts" afterDir="false" />
     </list>
@@ -58,7 +59,7 @@
       <workItem from="1597594838035" duration="3702000" />
       <workItem from="1597629034923" duration="8738000" />
       <workItem from="1597657425898" duration="3604000" />
-      <workItem from="1597682296726" duration="1235000" />
+      <workItem from="1597682296726" duration="2594000" />
     </task>
     <servers />
   </component>

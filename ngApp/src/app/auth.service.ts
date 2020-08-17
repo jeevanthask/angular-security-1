@@ -13,7 +13,13 @@ export class AuthService {
   constructor(private http: HttpClient, private _router: Router) {
   }
 
-  registerUser(user) {
+  registerUser(email,password) {
+
+    const user = {
+      email:email,
+      password:password
+    }
+
     return this.http.post<any>(this._registerUrl, user)
   }
 
