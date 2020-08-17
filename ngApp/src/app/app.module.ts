@@ -10,6 +10,7 @@ import { SpecialEventsComponent } from './special-events/special-events.componen
 import {RouterModule, Routes} from "@angular/router";
 import {FormsModule} from "@angular/forms";
 import {AuthService} from "./auth.service";
+import {HttpClientModule} from "@angular/common/http";
 
 const routes: Routes = [
   {path: 'events', component: EventsComponent},
@@ -33,7 +34,8 @@ const routes: Routes = [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(routes),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
