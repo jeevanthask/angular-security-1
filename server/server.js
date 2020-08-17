@@ -1,12 +1,19 @@
 const express = require('express')
 const bodyParser = require('body-parser')
+const mongoose = require('mongoose')
+
+const app = express()
+app.use(bodyParser.json())
 
 const PORT = 3000
 const api = require('./routes/api')
 
-const app = express()
+mongoose.connect('mongodb://127.0.0.1:27017/AngularAuth', {useNewUrlParser: true})
+const connection = mongoose.connection
 
-app.use(bodyParser.json())
+connection.once('open', function () {
+    console.log('mongodb connection established successfully')
+})
 
 app.use('/api',api)
 
