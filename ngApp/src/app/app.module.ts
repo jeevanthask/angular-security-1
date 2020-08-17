@@ -13,6 +13,7 @@ const routes: Routes = [
   {path: 'events', component: EventsComponent},
   {path: 'special', component: SpecialEventsComponent},
   {path: 'login', component: LoginComponent},
+  {path: 'register', component: RegisterComponent},
 
   {path: '', redirectTo: 'events', pathMatch: 'full'}
 
