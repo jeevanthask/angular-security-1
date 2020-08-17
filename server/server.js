@@ -17,9 +17,22 @@ connection.once('open', function () {
 
 app.use('/api',api)
 
+
 app.get('/',(req,res) => {
     res.send('welcome all guys')
 })
+
+
+
+
+
+
+
+
+
+
+
+
 
 app.listen(PORT,() => console.log('listening in port 3000'))
 
