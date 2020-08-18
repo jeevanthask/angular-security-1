@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5caa34e-7783-4d2d-aefc-2b2b3724cb14" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ngApp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ngApp/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ngApp/src/app/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ngApp/src/app/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ngApp/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ngApp/src/app/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ngApp/src/app/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ngApp/src/app/register/register.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +58,7 @@
       <workItem from="1597682296726" duration="2594000" />
       <workItem from="1597718769502" duration="7583000" />
       <workItem from="1597735868325" duration="1998000" />
-      <workItem from="1597754390721" duration="3954000" />
+      <workItem from="1597754390721" duration="4264000" />
     </task>
     <servers />
   </component>
