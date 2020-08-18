@@ -24,10 +24,15 @@ export class RegisterComponent implements OnInit {
   ngOnInit() {
   }
 
-  registerUser(email,password) {
-    this._auth.registerUser(email, password).subscribe(() => {
-      alert("The user added successfully!!")
-    });
+  registerUser(email, password) {
+    this._auth.registerUser(email, password)
+      .subscribe(
+        res => {
+          console.log(res)
+
+          localStorage.setItem('token', res.token)
+        },
+        err => console.log(err))
 
     this.createForm = this.fb.group({
       email: ['', Validators.required],
