@@ -7,24 +7,24 @@ import {Router} from "@angular/router";
 })
 export class AuthService {
 
-  _registerUrl = "http://localhost:3000";
+  Url = "http://localhost:3000";
   private _loginUrl = "http://localhost:3000/api/login";
 
   constructor(private http: HttpClient, private _router: Router) {
   }
 
-  registerUser(email,password) {
+  registerUser(email, password) {
 
     const user = {
-      email:email,
-      password:password
+      email: email,
+      password: password
     }
 
-    return this.http.post(`${this._registerUrl}/api/register`, user)
+    return this.http.post(`${this.Url}/api/register`, user)
   }
 
   loginUser(user) {
-    return this.http.post<any>(this._loginUrl, user)
+    return this.http.post(`${this.Url}/api/login`, user)
   }
 
   logoutUser() {
@@ -39,4 +39,5 @@ export class AuthService {
   loggedIn() {
     return !!localStorage.getItem('token')
   }
+
 }
