@@ -9,21 +9,22 @@ router.get('/', (req, res) => {
 })
 
 router.route('/register').post(function (req, res) {
-    let user = new User(req.body);
-    user.save()
-        .then(user => {
+
+    let userData = req.body
+
+    let user = new User(userData)
+
+    user.save((error, registeredUser) => {
+        if (error) {
+            console.log(error)
+        } else {
+            let payload = {subject: registeredUser._id}
+            let token = jwt.sign(payload, 'secretKey')
+            res.status(200).send({token})
+        }
+    })
 
 
-            let payload = {subject: user._id}
-            let token = jwt.sign(payload,'secretKey')
-
-            res.status(200).json({'user': 'user added successfully'})
-
-
-        })
-        .catch(err => {
-            res.status(400).send('adding user failed')
-        })
 });
 
 router.route('/login').post(function (req, res) {
@@ -38,7 +39,11 @@ router.route('/login').post(function (req, res) {
             } else if (user.password !== userData.password) {
                 res.status(401).send('Invalid Password')
             } else {
-                res.status(200).send(user)
+
+                let payload = {subject: user._id}
+                let token = jwt.sign(payload, 'secretKey')
+
+                res.status(200).send({token})
             }
         }
     })
