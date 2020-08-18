@@ -11,6 +11,7 @@ import {RouterModule, Routes} from "@angular/router";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {AuthService} from "./auth.service";
 import {HttpClientModule} from "@angular/common/http";
+import {EventService} from "./event.service";
 
 const routes: Routes = [
   {path: 'events', component: EventsComponent},
@@ -38,7 +39,7 @@ const routes: Routes = [
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [AuthService],
+  providers: [AuthService,EventService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
