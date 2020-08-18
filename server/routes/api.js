@@ -1,5 +1,6 @@
 const express = require('express')
 const router = express.Router()
+const jwt = require('jsonwebtoken')
 
 let User = require('../models/users')
 
@@ -11,6 +12,7 @@ router.route('/register').post(function (req, res) {
     let user = new User(req.body);
     user.save()
         .then(user => {
+
             res.status(200).json({'user': 'user added successfully'})
         })
         .catch(err => {
