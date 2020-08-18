@@ -13,7 +13,13 @@ router.route('/register').post(function (req, res) {
     user.save()
         .then(user => {
 
+
+            let payload = {subject: user._id}
+            let token = jwt.sign(payload,'secretKey')
+
             res.status(200).json({'user': 'user added successfully'})
+
+
         })
         .catch(err => {
             res.status(400).send('adding user failed')
