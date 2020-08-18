@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f5caa34e-7783-4d2d-aefc-2b2b3724cb14" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ngApp/src/app/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ngApp/src/app/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ngApp/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ngApp/src/app/login/login.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ngApp/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ngApp/src/app/login/login.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +57,7 @@
       <workItem from="1597629034923" duration="8738000" />
       <workItem from="1597657425898" duration="3604000" />
       <workItem from="1597682296726" duration="2594000" />
-      <workItem from="1597718769502" duration="2695000" />
+      <workItem from="1597718769502" duration="3683000" />
     </task>
     <servers />
   </component>
