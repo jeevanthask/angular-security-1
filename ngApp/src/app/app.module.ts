@@ -10,9 +10,10 @@ import {SpecialEventsComponent} from './special-events/special-events.component'
 import {RouterModule, Routes} from "@angular/router";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {AuthService} from "./auth.service";
-import {HttpClientModule} from "@angular/common/http";
+import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {EventService} from "./event.service";
 import {AuthGuard} from "./auth.guard";
+import {TokenInterceptorService} from "./token-interceptor.service";
 
 const routes: Routes = [
   {path: 'events', component: EventsComponent},
@@ -40,7 +41,14 @@ const routes: Routes = [
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [AuthService, EventService, AuthGuard],
+  providers: [AuthService, EventService, AuthGuard,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptorService,
+      multi: true
+    }
+  ],
+
   bootstrap: [AppComponent]
 })
 export class AppModule {
