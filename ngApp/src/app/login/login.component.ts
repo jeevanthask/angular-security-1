@@ -23,9 +23,12 @@ export class LoginComponent implements OnInit {
   loginUser() {
     this._auth.loginUser(this.loginUserData)
       .subscribe(
-        res => {
+        (res: any) => {
           console.log(res)
+
+
           localStorage.setItem('token', res.token)
+
 
           this._router.navigate(['/special'])
         },
