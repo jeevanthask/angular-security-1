@@ -5,17 +5,22 @@ const jwt = require('jsonwebtoken')
 let User = require('../models/users')
 
 function verifyToken(req, res, next) {
-    if(!req.headers.authorization) {
+    if (!req.headers.authorization) {
         return res.status(401).send('Unauthorized request')
     }
+
     let token = req.headers.authorization.split(' ')[1]
-    if(token === 'null') {
+
+    if (token === 'null') {
         return res.status(401).send('Unauthorized request')
     }
+
     let payload = jwt.verify(token, 'secretKey')
-    if(!payload) {
+
+    if (!payload) {
         return res.status(401).send('Unauthorized request')
     }
+
     req.userId = payload.subject
     next()
 }
@@ -108,7 +113,7 @@ router.get('/events', (req, res) => {
     res.json(events)
 })
 
-router.get('/special', (req, res) => {
+router.get('/special', verifyToken, (req, res) => {
     let events = [
         {
             "_id": "1",
