@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5caa34e-7783-4d2d-aefc-2b2b3724cb14" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ngApp/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ngApp/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ngApp/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ngApp/src/app/app.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +62,7 @@
       <workItem from="1597754390721" duration="4264000" />
       <workItem from="1597834889380" duration="1816000" />
       <workItem from="1597938833152" duration="5613000" />
-      <workItem from="1597976030662" duration="1950000" />
+      <workItem from="1597976030662" duration="2851000" />
     </task>
     <servers />
   </component>
