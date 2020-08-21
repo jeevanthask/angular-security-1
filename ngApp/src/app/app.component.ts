@@ -11,5 +11,5 @@ export class AppComponent {
 
   constructor(private _authService: AuthService) {
   }
-  
+
 }
